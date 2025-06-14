@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Web Portfolio</title>
+
+  <!-- Font Awesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- CSS Styling -->
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f0f8ff;
+      margin: 0;
+      padding: 20px;
+    }
+
+    header {
+      background-color: #333;
+      color: white;
+      padding: 15px;
+      text-align: center;
+    }
+
+    h1, h2 {
+      margin-top: 0;
+    }
+
+    main {
+      background-color: white;
+      padding: 20px;
+      margin-top: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px #ccc;
+    }
+
+    img {
+      display: block;
+      margin: 20px auto;
+      width: 200px;
+      border-radius: 10px;
+    }
+
+    .links {
+      text-align: center;
+      margin-top: 15px;
+    }
+
+    .links a {
+      margin: 0 10px;
+      text-decoration: none;
+      font-size: 18px;
+      color: #333;
+    }
+
+    .links a:hover {
+      color: #0073b1;
+    }
+
+    .links i {
+      margin-right: 8px;
+    }
+
+    button {
+      padding: 10px 20px;
+      background-color: #04AA6D;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+
+    button:hover {
+      background-color: #037a53;
+    }
+
+    footer {
+      margin-top: 30px;
+      text-align: center;
+      font-size: 14px;
+      color: #666;
+    }
+
+    label {
+      display: inline-block;
+      margin-top: 10px;
+    }
+
+    input[type="text"],
+    input[type="email"] {
+      margin-top: 5px;
+      margin-bottom: 10px;
+      padding: 5px;
+      width: 100%;
+      max-width: 300px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>My Web Portfolio</h1>
+    <p>Learning HTML, CSS, and JavaScript</p>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <h2>Hello! I'm K Bhaskar</h2>
+    <p>I am passionate about front-end web development and currently pursuing studies at Mohan Babu University.</p>
+
+    <!-- Image -->
+    <img src="https://filmfare.wwmindia.com/content/2024/feb/dulquersalmaan11707044756.jpg" alt="Profile Photo">
+
+    <h3>Skills</h3>
+    <ol>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+    </ol>
+
+    <hr>
+
+    <h3>Contact Me</h3>
+    <label for="name">Name:</label><br>
+    <input type="text" id="name"><br>
+
+    <label for="email">Email:</label><br>
+    <input type="email" id="email"><br>
+
+    <label>Choose your gender:</label><br>
+    <input type="radio" id="male" name="gender" value="male">
+    <label for="male">Male</label>
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Female</label><br>
+
+    <label>Select your interests:</label><br>
+    <input type="checkbox" id="coding" value="coding">
+    <label for="coding">Coding</label>
+    <input type="checkbox" id="reading" value="reading">
+    <label for="reading">Reading</label><br>
+
+    <button>Submit</button>
+
+    <hr>
+
+    <h3>Connect on Social Media</h3>
+    <div class="links">
+      <a href="https://www.linkedin.com/in/yourprofile" target="_blank">
+        <i class="fab fa-linkedin"></i>LinkedIn
+      </a>
+      <a href="https://github.com/yourusername" target="_blank">
+        <i class="fab fa-github"></i>GitHub
+      </a>
+    </div>
+
+    <!-- JavaScript Button -->
+    <button onclick="showMessage()">Click!</button>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 Bhaskar | Web Development Practice
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    function showMessage() {
+      alert("Thank you for visiting my web page!");
+    }
+  </script>
+
+</body>
+</html>
